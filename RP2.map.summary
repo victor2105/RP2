@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Apr 15 19:32:15 2015
+Quartus II 32-bit Version : 12.0 Build 263 08/02/2012 SP 2 SJ Web Edition
+Revision Name : RP2
+Top-level Entity Name : regn
+Family : Cyclone II
+Total logic elements : 16
+    Total combinational functions : 0
+    Dedicated logic registers : 16
+Total registers : 16
+Total pins : 34
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

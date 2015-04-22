@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+-- TD2 - Q4
+-- entity responsible for increment an input based on a control signal value
+-- when inc is on 1, the component will add the 1 to the input
+entity inc is
+	port
+	(
+		data_in : in std_logic_vector(7 downto 0);
+		inc: in std_logic; -- control signal to allow increment or not
+		data_out : out std_logic_vector(7 downto 0)
+	);
+end inc;
+
+architecture inca of inc is
+begin
+	with inc select
+		data_out <=
+						std_logic_vector(unsigned(data_in) + 1) when '1',
+						data_in when others;
+end inca;
